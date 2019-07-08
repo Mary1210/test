@@ -1,14 +1,11 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="nopcommerece Regression suite">
-	<parameter name="browser" value="chrome"></parameter>
-	<test name="Regression Test" preserve-order="false"> 
+	<parameter name="browser" value="headless"></parameter>
+	<test name="Regression Test" preserve-order="false">
 		<classes>
-			<class name="tests.UserRegistrationTest" />
-			<class name="tests.AddProductReviewTest" />
-			<class name="tests.AddProductToCompareTest" />
-			<class name="tests.AddProductToShoppingCart" />
-			<class name="tests.AddProductToWishList" />
-			
+			<class name="tests.contactUsTest" />
+			<class name="tests.UserRegistrationTestWithjavaFaker" />
+
 		</classes>
 	</test>
 </suite>
