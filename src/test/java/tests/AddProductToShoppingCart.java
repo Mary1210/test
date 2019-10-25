@@ -27,11 +27,11 @@ public class AddProductToShoppingCart extends TestBase{
 	public void UserCanAddProductToShoppingCart() throws InterruptedException
 	{
 		detailsObject = new ProductDetailsPage(driver);
-		Thread.sleep(2000);
 		detailsObject.AddProductToCart();
+		Thread.sleep(1000);
 		driver.navigate().to("https://demo.nopcommerce.com/cart");
-		cartPage.RemoveProductFromCart();
-		Assert.assertTrue(cartPage.totalLbl.getTagName().contains("100.00"));
+		cartPage = new ShoppingCartPage(driver);
+		Assert.assertTrue(cartPage.totalLbl.getText().contains("$100.00"));
 	}
 	
 	@Test(priority=3)

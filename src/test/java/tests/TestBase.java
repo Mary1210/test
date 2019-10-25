@@ -71,7 +71,7 @@ public class TestBase extends AbstractTestNGCucumberTests{
 		driver.close();
 		
 	}
-	//Take screenshot when test case fail and add it in the screenshot folder
+	
 	@AfterMethod
 	public void screenshotOnFailure(ITestResult result)
 	{

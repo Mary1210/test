@@ -3,11 +3,10 @@
 	<parameter name="browser" value="chrome"></parameter>
 	<test name="Regression Test" preserve-order="false"> 
 		<classes>
-			<class name="tests.UserRegistrationTest" />
-			<class name="tests.AddProductReviewTest" />
-			<class name="tests.AddProductToCompareTest" />
+			
 			<class name="tests.AddProductToShoppingCart" />
 			<class name="tests.AddProductToWishList" />
+			<class name="tests.MyAccountTest" />
 			
 		</classes>
 	</test>

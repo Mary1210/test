@@ -47,9 +47,9 @@ public class SearchPage extends PageBase {
 		ProductList.get(0).click();
 	}
 	
-	public void ProductSearchUsingAutoSuggest_1(String Searchtxt)
+	/*public void ProductSearchUsingAutoSuggest_1(String Searchtxt)
 	{
 		setTextElementText(searchTextBox, Searchtxt);
 		ProductList.get(0).click();
-	}
+	}*/
 }

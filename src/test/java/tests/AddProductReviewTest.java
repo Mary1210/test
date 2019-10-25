@@ -26,7 +26,7 @@ public class AddProductReviewTest extends TestBase{
 		homeObject =new HomePage(driver);
 		homeObject.openRegisterationPage();
 		registerObject= new UserRegisterationPage(driver);
-		registerObject.userRegisteration("Mary", "Alfons", "teail5822@gmail.com", "12345678");
+		registerObject.userRegisteration("Mary", "Alfons", "tail58922@gmail.com", "12345678");
 		Assert.assertTrue(registerObject.successMessage.getText().contains("Your registration completed"));
 	}
 	

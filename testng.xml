@@ -1,7 +1,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name="nopcommerece Regression suite">
+<suite name="nopcommerece Regression suite" parallel="classes">
 	<parameter name="browser" value="chrome"></parameter>
-	<test name="Regression Test" preserve-order="false"> 
+	<test name="Regression Test" parallel="classes"> 
 		<classes>
 			<class name="tests.UserRegistrationTest" />
 			<class name="tests.AddProductReviewTest" />

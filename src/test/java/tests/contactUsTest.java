@@ -5,6 +5,10 @@ import org.testng.annotations.Test;
 
 import Pages.ContactUsPage;
 import Pages.HomePage;
+import io.qameta.allure.Description;
+import io.qameta.allure.Link;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
 
 public class contactUsTest extends TestBase{
 	HomePage home;
@@ -16,6 +20,9 @@ public class contactUsTest extends TestBase{
 	String enquiry="Hello Admin, this is for test";
 	
 	@Test
+	@Severity(SeverityLevel.CRITICAL)
+	@Description("Contact Us testcase")
+	@Link(name="jira",url="http://google.com")
 	public void UserCanContactUs()
 	{
 		home = new HomePage(driver);
