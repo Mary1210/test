@@ -3,17 +3,17 @@
 	<parameter name="browser" value="chrome"></parameter>
 	<test name="Regression Test" preserve-order="false">
 		<classes>
-<<<<<<< HEAD
+
 			
 			<class name="tests.AddProductToShoppingCart" />
 			<class name="tests.AddProductToWishList" />
 			<class name="tests.MyAccountTest" />
 			
-=======
+
 			<class name="tests.contactUsTest" />
 			<class name="tests.UserRegistrationTestWithjavaFaker" />
 
->>>>>>> dd28dfb575d649a6735b628595874f85f4de69c1
+
 		</classes>
 	</test>
 </suite>
